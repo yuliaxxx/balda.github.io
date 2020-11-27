@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Помощник OSINT</title>
-	<meta content="text/html; charset=utf-8">
+	<title>Задание</title>
+	<meta content="text/html" charset="utf-8">
 	<style type="text/css">
 	.block {
 		width: 50
@@ -28,31 +28,25 @@
 		<hr>
 	</div>
 	<div class = "block">
-		Привет, Osint1004!
-		<p>На днях я убирался у себя в квартире и нашел фотографию, помоги мне узнать кто изображен на фотографии (хотя бы имя) и где этот человек сейчас находится?</p>
-		<img src="https://live.staticflickr.com/65535/50649101117_304cf908b0_k.jpg" height="300" weight="300"> 
-		<hr>
-		<p>
-			Опубликовано: 18.11.2020
-		</p>
+		Привет!
+		16 числа на Московском вокзале я видел, как человек оставил документы, выглядят они важными. Помоги найти его адрес, думаю, надо вернуть.
+		Из зацепок могу предложить только то, что я видел, как он выкладывал фото в инстаграм с кофе и ноутбуком. Вдруг поможет.
 	</div>
 	<div class="block1">
 		<p>Проверить:</p>
 		<hr>
-		Имя: <input id="name">
-		Место: <input id="place">
-		<button type="button" onclick="myFunction()">Подтвердить</button>
+		Ответ <input id="answer">
+		<button type="button" onclick="myFunction()">Отправить</button>
 		<p id="demo"></p>
 		<script type="text/javascript">
 			function myFunction() {
 				var text;
-    			var x = document.getElementById("name").value;
-    			var y = document.getElementById("place").value;
-    			if (x == "Jennie" || x == "jennie" & y == "New York" || y == "new york")  {
-        		text = "все правильно)";
+    			var x = document.getElementById("answer").value;
+    			if (x == "Марата 54" || x == "Марата 54/34" || x == "марата 54" || x == "марата 54/34" || x == "Разъезжая 34" || x == "разъезжая 34")  {
+        		text = "Правильно";
     		}
     			else {
-    				text = "Попробуйте снова(";
+    				text = "Не правильно, попробуйте снова";
     			}
     		document.getElementById("demo").innerHTML = text;
 
